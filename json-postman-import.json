@@ -1,0 +1,423 @@
+{
+  "info": {
+    "name": "Разговоры о важном - Иркутская область API",
+    "description": "API коллекция для тестирования образовательного ресурса",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "General",
+      "item": [
+        {
+          "name": "API Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/",
+              "host": ["{{baseUrl}}"],
+              "path": [""]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get All Categories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/categories",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "categories"]
+            }
+          }
+        },
+        {
+          "name": "Get Category by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/categories/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "categories", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Category",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name_cat\": \"Патриотическое воспитание\",\n  \"description_cat\": \"Уроки о любви к Родине, истории России и родного края\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/categories",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "categories"]
+            }
+          }
+        },
+        {
+          "name": "Update Category",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name_cat\": \"Гражданское воспитание\",\n  \"description_cat\": \"Формирование активной гражданской позиции\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/categories/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "categories", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Category",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/categories/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "categories", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tags",
+      "item": [
+        {
+          "name": "Get All Tags",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/tags",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "tags"]
+            }
+          }
+        },
+        {
+          "name": "Get Tag by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/tags/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "tags", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Tag",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name_tag\": \"История\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/tags",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "tags"]
+            }
+          }
+        },
+        {
+          "name": "Update Tag",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name_tag\": \"География\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/tags/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "tags", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Tag",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/tags/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "tags", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Lessons",
+      "item": [
+        {
+          "name": "Get All Lessons",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/lessons",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "lessons"]
+            }
+          }
+        },
+        {
+          "name": "Get Lessons by Grade Level",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/lessons/by-grade?grade=5",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "lessons", "by-grade"],
+              "query": [
+                {
+                  "key": "grade",
+                  "value": "5"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Lesson by ID",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/lessons/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "lessons", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Lesson",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title_les\": \"История Иркутской области\",\n  \"description_les\": \"Знакомство с историей родного края, важными событиями и выдающимися личностями Приангарья\",\n  \"date_les\": \"2024-11-04\",\n  \"grade_level_les\": \"5-7 классы\",\n  \"categories_id_cat\": 1,\n  \"tags_id_tag\": 1\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/lessons",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "lessons"]
+            }
+          }
+        },
+        {
+          "name": "Update Lesson",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title_les\": \"Байкал - жемчужина Сибири\",\n  \"description_les\": \"Изучение уникальной экосистемы озера Байкал, его значения для региона и страны\",\n  \"date_les\": \"2024-11-11\",\n  \"grade_level_les\": \"8-9 классы\",\n  \"categories_id_cat\": 2,\n  \"tags_id_tag\": 2\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/lessons/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "lessons", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Lesson",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/lessons/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "lessons", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Test Cases",
+      "item": [
+        {
+          "name": "Full Workflow Test",
+          "item": [
+            {
+              "name": "1. Create Category",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name_cat\": \"Экологическое воспитание\",\n  \"description_cat\": \"Формирование экологической культуры и ответственного отношения к природе\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/categories",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["api", "categories"]
+                }
+              }
+            },
+            {
+              "name": "2. Create Tag",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"name_tag\": \"Экология\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/tags",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["api", "tags"]
+                }
+              }
+            },
+            {
+              "name": "3. Create Lesson with Category and Tag",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"title_les\": \"Сохраним Байкал для будущих поколений\",\n  \"description_les\": \"Урок об экологических проблемах Байкала и способах их решения\",\n  \"date_les\": \"2024-11-18\",\n  \"grade_level_les\": \"10-11 классы\",\n  \"categories_id_cat\": 1,\n  \"tags_id_tag\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/lessons",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["api", "lessons"]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Error Cases",
+          "item": [
+            {
+              "name": "404 - Non-existent Endpoint",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/nonexistent",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["api", "nonexistent"]
+                }
+              }
+            },
+            {
+              "name": "404 - Non-existent Resource",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{baseUrl}}/api/lessons/99999",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["api", "lessons", "99999"]
+                }
+              }
+            },
+            {
+              "name": "400 - Invalid Data",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"invalid_field\": \"test\"\n}"
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/lessons",
+                  "host": ["{{baseUrl}}"],
+                  "path": ["api", "lessons"]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
