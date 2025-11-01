@@ -1,7 +1,32 @@
+version: '3.8'
+
 services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: irkutsk-lessons:latest
+    container_name: irkutsk_lessons_app
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./backend:/var/www/html/backend
+      - ./frontend:/var/www/html/frontend
+    environment:
+      - DB_HOST=mysql
+      - DB_PORT=3306
+      - DB_DATABASE=${MYSQL_DATABASE}
+      - DB_USERNAME=${MYSQL_USER}
+      - DB_PASSWORD=${MYSQL_PASSWORD}
+    depends_on:
+      - mysql
+    networks:
+      - app-network
+
   mysql:
-    image: mysql:latest
-    container_name: mysql_container
+    image: mysql:8.0
+    container_name: irkutsk_lessons_mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
@@ -12,6 +37,14 @@ services:
       - "3306:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./create-db.sql:/docker-entrypoint-initdb.d/01-create-db.sql
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
 
 volumes:
   mysql_data:
+    driver: local

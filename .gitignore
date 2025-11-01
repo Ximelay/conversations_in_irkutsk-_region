@@ -2,3 +2,6 @@
 
 /vendor/
 /.env
+/backend/.env
+/backend/composer.lock
+/backend/.env.docker
