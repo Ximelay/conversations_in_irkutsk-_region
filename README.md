@@ -4,26 +4,29 @@
 
 Образовательная платформа для проведения классных часов "Разговоры о важном" в школах Иркутской области.
 
-## Быстрый старт
-
 ## Полезные команды Docker
 
 ```bash
+# Собрать контейнеры
+docker-compose build
+
+# Поднять контейнеры
+docker-compose up -d
+
 # Остановить контейнеры
 docker-compose down
 
-# Пересоздать БД (осторожно - удалит данные!)
+# Полностью удалить все контейнеры и информацию в них
 docker-compose down -v
-docker-compose up -d --build
 
 # Посмотреть логи
-docker-compose logs -f app
+docker-compose logs -f <name_container>
 
 # Войти в контейнер PHP
-docker exec -it irkutsk_lessons_app bash
+docker exec -it <name_container> bash
 
 # Войти в MySQL
-docker exec -it irkutsk_lessons_mysql mysql -u xily -p
+docker exec -it <name_container> mysql -u xily -p
 ```
 
 ### 1. Запуск Backend (Docker)
@@ -36,10 +39,9 @@ cd conversations_in_irkutsk-_region
 # Получить .env файлы у Project-manager
 
 # Запустить Docker контейнеры
-docker-compose up -d --build
-
-# Проверить статус
-docker-compose ps
+docker-compose build
+|
+docker-compose up -d
 ```
 
 ### 2. Доступ к API
