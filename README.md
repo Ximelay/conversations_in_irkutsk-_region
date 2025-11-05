@@ -6,6 +6,26 @@
 
 ## Быстрый старт
 
+## Полезные команды Docker
+
+```bash
+# Остановить контейнеры
+docker-compose down
+
+# Пересоздать БД (осторожно - удалит данные!)
+docker-compose down -v
+docker-compose up -d --build
+
+# Посмотреть логи
+docker-compose logs -f app
+
+# Войти в контейнер PHP
+docker exec -it irkutsk_lessons_app bash
+
+# Войти в MySQL
+docker exec -it irkutsk_lessons_mysql mysql -u xily -p
+```
+
 ### 1. Запуск Backend (Docker)
 
 ```bash
@@ -255,26 +275,6 @@ Backend настроен на прием запросов с любых исто
   "message": "Сообщение", // Опционально
   "pagination": {...}     // Для списков с пагинацией
 }
-```
-
-## Полезные команды Docker
-
-```bash
-# Остановить контейнеры
-docker-compose down
-
-# Пересоздать БД (осторожно - удалит данные!)
-docker-compose down -v
-docker-compose up -d --build
-
-# Посмотреть логи
-docker-compose logs -f app
-
-# Войти в контейнер PHP
-docker exec -it irkutsk_lessons_app bash
-
-# Войти в MySQL
-docker exec -it irkutsk_lessons_mysql mysql -u xily -p
 ```
 
 ## Контакты и поддержка
