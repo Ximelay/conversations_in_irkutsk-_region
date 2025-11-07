@@ -13,10 +13,19 @@ export default defineConfig({
     port: 8080,
     host: '0.0.0.0', // важно для Docker
     strictPort: true, // не менять порт если занят
+    hmr: {
+      host: 'localhost',
+      port: 8081,
+      protocol: 'ws'
+    },
+    watch: {
+      usePolling: true,
+      interval: 1000
+    },
     // Прокси для API запросов к бэкенду
     proxy: {
       '/api': {
-        target: 'http://localhost:3000', // твой бэкенд URL
+        target: 'http://app:80', // твой бэкенд URL
         changeOrigin: true,
         secure: false
       }

@@ -1,6 +1,26 @@
 version: '3.8'
 
 services:
+  # Frontend dev server с hot reload
+  frontend:
+    image: node:20-alpine
+    container_name: irkutsk_frontend_dev
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    ports:
+      - "8081:8080"
+#      - "8081:8081"
+    volumes:
+      - ./frontend/site:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true  # Важно для hot-reload в Docker
+      - WATCHPACK_POLLING=true
+    networks:
+      - app-network
+
+  # Backend PHP сервер
   app:
     build:
       context: .
@@ -11,8 +31,10 @@ services:
     ports:
       - "8080:80"
     volumes:
+      # Монтируем backend для hot reload PHP
       - ./backend:/var/www/html/backend
-      - ./frontend:/site/var/www/html/frontend
+      # Создаем пустую папку для frontend (не используется в dev)
+      - ./docker/frontend-placeholder:/var/www/html/frontend
     environment:
       - DB_HOST=mysql
       - DB_PORT=3306
@@ -41,21 +63,6 @@ services:
     networks:
       - app-network
 
-#  frontend:
-#    image: node:20-alpine
-#    container_name: irkutsk_frontend_dev
-#    working_dir: /app
-#    command: sh -c "npm install && npm run dev"
-#    ports:
-#      - "8081:8080"
-#    volumes:
-#      - ./frontend/site:/app
-#      - /app/node_modules
-#    environment:
-#      - NODE_ENV=development
-#    networks:
-#      - app-network
-#
 networks:
   app-network:
     driver: bridge
