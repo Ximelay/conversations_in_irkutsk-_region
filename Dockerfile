@@ -1,3 +1,18 @@
+# Stage 1: Build Vue3 frontend
+FROM node:20-alpine AS frontend-builder
+
+WORKDIR /app
+
+# Копируем файлы зависимостей frontend
+COPY frontend/site/package*.json ./
+RUN npm ci
+
+# Копируем исходный код frontend
+COPY frontend/site/ ./
+
+# Собираем production build
+RUN npm run build
+
 FROM php:8.2-apache
 
 RUN apt-get update && apt-get install -y \
@@ -24,7 +39,8 @@ COPY docker/000-default.conf /etc/apache2/sites-available/000-default.conf
 WORKDIR /var/www/html
 
 COPY backend/ /var/www/html/backend/
-COPY frontend/ /var/www/html/frontend/
+#COPY frontend/ /var/www/html/frontend/
+COPY --from=frontend-builder /app/dist /var/www/html/frontend/
 
 WORKDIR /var/www/html/backend
 RUN composer install --no-dev --optimize-autoloader

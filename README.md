@@ -39,9 +39,10 @@ cd conversations_in_irkutsk-_region
 # Получить .env файлы у Project-manager
 
 # Запустить Docker контейнеры
-docker-compose build
-|
-docker-compose up -d
+docker-compose -f docker-compose-dev.yml up -d --build
+
+# Проверить статус
+docker-compose ps
 ```
 
 ### 2. Доступ к API
