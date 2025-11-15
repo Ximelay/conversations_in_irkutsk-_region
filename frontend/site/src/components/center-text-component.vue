@@ -4,7 +4,7 @@
   <div class="w-full h-screen relative">
     <!-- Фоновое изображение Иркутской области -->
     <img
-      src="D:\TEST_CODE_VUE_TAILWIND_FOR_OUR_PROJECT\test_frontend_code_for_our_project\src\image\Alexandr III.jpg"
+      src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\Alexandr III.jpg"
       alt="Иркутск и Иркутская область"
       class="w-full h-full object-cover"
     />

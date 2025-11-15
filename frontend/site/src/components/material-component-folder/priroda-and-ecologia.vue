@@ -1,13 +1,15 @@
 <script setup>
 import HeaderComponent from '@/components/header-component.vue'
-import footerComponent from '../footer-component.vue';
+import footerComponent from '../footer-component.vue'
 </script>
 
 <template>
   <div class="min-h-screen bg-linear-to-br from-green-50 to-blue-50">
     <HeaderComponent />
 
-    <main class="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-12 lg:pb-16">
+    <main
+      class="container mx-auto px-4 sm:px-6 lg:px-8 pt-24 sm:pt-28 lg:pt-32 pb-8 sm:pb-12 lg:pb-16"
+    >
       <!-- Заголовок раздела -->
       <section class="text-center mb-12 sm:mb-16 lg:mb-20">
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
@@ -25,7 +27,7 @@ import footerComponent from '../footer-component.vue';
       <section class="mb-12 sm:mb-16 lg:mb-20">
         <div class="rounded-3xl shadow-2xl overflow-hidden">
           <img
-            src="D:\TEST_CODE_VUE_TAILWIND_FOR_OUR_PROJECT\test_frontend_code_for_our_project\src\image\BAIKAL.jpg"
+            src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\BAIKAL.jpg"
             alt="Озеро Байкал - жемчужина планеты"
             class="w-full h-64 sm:h-80 lg:h-96 object-cover"
           />
@@ -187,10 +189,6 @@ import footerComponent from '../footer-component.vue';
       </section>
     </main>
 
-      <footer-component/>
+    <footer-component />
   </div>
-
-
-
-
 </template>

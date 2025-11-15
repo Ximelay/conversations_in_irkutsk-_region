@@ -87,7 +87,7 @@ onUnmounted(() => {
   <div class="min-h-screen">
     <HeaderComponent />
 
-    
+
     <!-- Секции -->
     <div class="h-screen snap-start" ref="el => sections[0] = el">
       <opis-site-component/>
@@ -95,7 +95,7 @@ onUnmounted(() => {
 
     <div class="h-screen snap-start relative" ref="el => sections[1] = el">
       <img
-        src="D:\TEST_CODE_VUE_TAILWIND_FOR_OUR_PROJECT\test_frontend_code_for_our_project\src\image\Байкал.png"
+        src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\Байкал.png"
         alt="Байкал - Жемчужина Сибири"
         class="w-full h-full object-cover"
       />

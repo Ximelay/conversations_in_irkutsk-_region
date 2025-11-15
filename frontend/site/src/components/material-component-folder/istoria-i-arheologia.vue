@@ -1,6 +1,6 @@
 <script setup>
 import HeaderComponent from '../header-component.vue'
-import footerComponent from '../footer-component.vue';
+import footerComponent from '../footer-component.vue'
 </script>
 
 <template>
@@ -105,7 +105,7 @@ import footerComponent from '../footer-component.vue';
               >
                 <div class="h-40 bg-gray-100 overflow-hidden">
                   <img
-                    src="D:\TEST_CODE_VUE_TAILWIND_FOR_OUR_PROJECT\test_frontend_code_for_our_project\src\image\SHISHKINSKIE.jpg"
+                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\SHISHKINSKIE.jpg"
                     alt="Шишкинские писаницы"
                     class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                   />
@@ -120,7 +120,7 @@ import footerComponent from '../footer-component.vue';
               >
                 <div class="h-40 bg-gray-100 overflow-hidden">
                   <img
-                    src="D:\TEST_CODE_VUE_TAILWIND_FOR_OUR_PROJECT\test_frontend_code_for_our_project\src\image\NECROPOL.png"
+                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\NECROPOL.png"
                     alt="Глазковский некрополь"
                     class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                   />
@@ -135,7 +135,7 @@ import footerComponent from '../footer-component.vue';
               >
                 <div class="h-40 bg-gray-100 overflow-hidden">
                   <img
-                    src="D:\TEST_CODE_VUE_TAILWIND_FOR_OUR_PROJECT\test_frontend_code_for_our_project\src\image\MALTA.jpg"
+                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\MALTA.jpg"
                     alt="Стоянка Мальта"
                     class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                   />
@@ -700,9 +700,6 @@ import footerComponent from '../footer-component.vue';
       </section>
     </main>
 
-      <footer-component/>
+    <footer-component />
   </div>
-
-
-
 </template>
