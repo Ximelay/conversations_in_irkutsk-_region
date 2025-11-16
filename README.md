@@ -1,5 +1,21 @@
 # Разговоры о важном - Иркутская область
 
+## 🛠️ Технологический стек
+
+**Frontend:** Vue 3 • Vite • Tailwind CSS • Vue Router
+**Backend:** PHP 8.2 • Slim Framework • Eloquent ORM • MySQL
+**DevOps:** Docker • Docker Compose • Apache
+
+## 📁 Структура
+```
+├── frontend/site/          # Vue 3 приложение
+├── backend/                # PHP API
+├── docker/                 # Docker конфигурации
+├── Dockerfile              # Multi-stage build
+├── docker-compose.yml      # Production
+└── docker-compose-dev.yml  # Development
+```
+
 ## Для Frontend разработчиков (Vue 3)
 
 Образовательная платформа для проведения классных часов "Разговоры о важном" в школах Иркутской области.
