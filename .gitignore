@@ -5,3 +5,6 @@
 /backend/.env
 /backend/composer.lock
 /backend/.env.docker
+/frontend/package-lock.json
+/frontend/site/package-lock.json
+/frontend/site/node_modules

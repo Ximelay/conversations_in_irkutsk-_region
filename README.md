@@ -7,6 +7,9 @@
 ## Полезные команды Docker
 
 ```bash
+# Запуск всего проекта:
+docker-compose -f docker-compose-dev.yml up -d --build
+
 # Собрать контейнеры
 docker-compose build
 

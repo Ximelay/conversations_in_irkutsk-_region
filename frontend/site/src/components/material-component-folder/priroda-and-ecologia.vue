@@ -27,7 +27,7 @@ import footerComponent from '../footer-component.vue'
       <section class="mb-12 sm:mb-16 lg:mb-20">
         <div class="rounded-3xl shadow-2xl overflow-hidden">
           <img
-            src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\BAIKAL.jpg"
+            src="../../image/BAIKAL.jpg"
             alt="Озеро Байкал - жемчужина планеты"
             class="w-full h-64 sm:h-80 lg:h-96 object-cover"
           />

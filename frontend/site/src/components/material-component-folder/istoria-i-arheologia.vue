@@ -105,7 +105,7 @@ import footerComponent from '../footer-component.vue'
               >
                 <div class="h-40 bg-gray-100 overflow-hidden">
                   <img
-                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\SHISHKINSKIE.jpg"
+                    src="../../image/SHISHKINSKIE.jpg"
                     alt="Шишкинские писаницы"
                     class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                   />
@@ -120,7 +120,7 @@ import footerComponent from '../footer-component.vue'
               >
                 <div class="h-40 bg-gray-100 overflow-hidden">
                   <img
-                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\NECROPOL.png"
+                    src="../../image/NECROPOL.png"
                     alt="Глазковский некрополь"
                     class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                   />
@@ -135,7 +135,7 @@ import footerComponent from '../footer-component.vue'
               >
                 <div class="h-40 bg-gray-100 overflow-hidden">
                   <img
-                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\MALTA.jpg"
+                    src="../../image/MALTA.jpg"
                     alt="Стоянка Мальта"
                     class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
                   />

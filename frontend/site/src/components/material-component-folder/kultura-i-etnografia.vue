@@ -31,7 +31,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-48 bg-gray-200 flex items-center justify-center">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\ZNAMENSKIY.png"
+                src="../../image/ZNAMENSKIY.png"
                 alt=""
               />
             </div>
@@ -45,7 +45,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-48 bg-gray-200 flex items-center justify-center">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\TEATR_OHLOPKOVA.jpg"
+                src="../../image/TEATR_OHLOPKOVA.jpg"
                 alt=""
               />
             </div>
@@ -59,7 +59,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-48 bg-gray-200 flex items-center justify-center">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\EVENSKIY_ORNAMENT.jpg"
+                src="../../image/EVENSKIY_ORNAMENT.jpg"
                 alt=""
               />
             </div>
@@ -73,7 +73,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-48 bg-gray-200 flex items-center justify-center">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\BURYATSKIY_EHOR.png"
+                src="../../image/BURYATSKIY_EHOR.png"
                 alt=""
               />
             </div>
@@ -115,7 +115,7 @@ import footerComponent from '../footer-component.vue'
                   <div class="text-2xl mb-2">
                     <img
                       class="rounded-3xl"
-                      src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\YURTA.jpg"
+                      src="../../image/YURTA.jpg"
                       alt=""
                     />
                   </div>
@@ -126,7 +126,7 @@ import footerComponent from '../footer-component.vue'
                   <div class="text-2xl mb-2">
                     <img
                       class="rounded-3xl h-50"
-                      src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\BUUSI.png"
+                      src="../../image/BUUSI.png"
                       alt=""
                     />
                   </div>
@@ -140,7 +140,7 @@ import footerComponent from '../footer-component.vue'
               <div class="h-100 bg-gray-200 rounded-xl flex items-center justify-center mb-4">
                 <img
                   class="h-100 w-200 rounded-xl"
-                  src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\BURATSKAYA_KULTURA.png"
+                  src="../../image/BURATSKAYA_KULTURA.png"
                   alt=""
                 />
               </div>
@@ -181,7 +181,7 @@ import footerComponent from '../footer-component.vue'
               <div class="h-100 bg-gray-200 rounded-xl flex items-center justify-center mb-4">
                 <img
                   class="h-100 w-200 rounded-xl"
-                  src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\EVENKI.jpg"
+                  src="../../image/EVENKI.jpg"
                   alt=""
                 />
               </div>
@@ -211,7 +211,7 @@ import footerComponent from '../footer-component.vue'
                   <div class="text-2xl mb-2">
                     <img
                       class="rounded-3xl"
-                      src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\CHYM.jpg"
+                      src="../../image/CHYM.jpg"
                       alt=""
                     />
                   </div>
@@ -222,7 +222,7 @@ import footerComponent from '../footer-component.vue'
                   <div class="text-2xl mb-2">
                     <img
                       class="rounded-3xl"
-                      src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\EVENSKIY_OHOTNIK.jpg"
+                      src="../../image/EVENSKIY_OHOTNIK.jpg"
                       alt=""
                     />
                   </div>
@@ -363,7 +363,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-64 bg-gray-100 overflow-hidden">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\vampilov.jpg"
+                src="../../image/vampilov.jpg"
                 alt="Александр Вампилов"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
@@ -393,7 +393,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-64 bg-gray-100 overflow-hidden">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\VALENTIN_RASPUTIN.jpg"
+                src="../../image/VALENTIN_RASPUTIN.jpg"
                 alt="Валентин Распутин"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
@@ -423,7 +423,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-64 bg-gray-100 overflow-hidden">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\MARK_SERGEEV.png"
+                src="../../image/MARK_SERGEEV.png"
                 alt="Марк Сергеев"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
@@ -457,7 +457,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-64 bg-gray-100 overflow-hidden">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\evtushenko.jpg"
+                src="../../image/evtushenko.jpg"
                 alt="Евгений Евтушенко"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
@@ -488,7 +488,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-64 bg-gray-100 overflow-hidden">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\krasovsky.jpg"
+                src="../../image/krasovsky.jpg"
                 alt="Леонид Красовский"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />
@@ -519,7 +519,7 @@ import footerComponent from '../footer-component.vue'
           >
             <div class="h-64 bg-gray-100 overflow-hidden">
               <img
-                src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\kobenkov.jpg"
+                src="../../image/kobenkov.jpg"
                 alt="Анатолий Кобенков"
                 class="w-full h-full object-cover group-hover:scale-105 transition duration-300"
               />

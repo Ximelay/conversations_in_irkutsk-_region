@@ -41,7 +41,7 @@ import footerComponent from '../footer-component.vue';
               <div class="flex justify-center lg:justify-start">
                 <div class="w-64 h-80 bg-gray-100 rounded-xl overflow-hidden">
                   <img
-                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\vampilov.jpg"
+                    src="../../image/vampilov.jpg"
                     alt="Александр Вампилов"
                     class="w-full h-full object-cover"
                   />
@@ -91,7 +91,7 @@ import footerComponent from '../footer-component.vue';
               <div class="flex justify-center lg:justify-start">
                 <div class="w-64 h-80 bg-gray-100 rounded-xl overflow-hidden">
                   <img
-                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\gaidai.jpg"
+                    src="../../image/gaidai.jpg"
                     alt="Леонид Гайдай"
                     class="w-full h-full object-cover"
                   />
@@ -139,7 +139,7 @@ import footerComponent from '../footer-component.vue';
               <div class="flex justify-center lg:justify-start">
                 <div class="w-64 h-80 bg-gray-100 rounded-xl overflow-hidden">
                   <img
-                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\VALENTIN_RASPUTIN.jpg"
+                    src="../../image/VALENTIN_RASPUTIN.jpg"
                     alt="Валентин Распутин"
                     class="w-full h-full object-cover"
                   />
@@ -191,7 +191,7 @@ import footerComponent from '../footer-component.vue';
               <div class="flex justify-center lg:justify-start">
                 <div class="w-64 h-80 bg-gray-100 rounded-xl overflow-hidden">
                   <img
-                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\gerasimov.jpg"
+                    src="../../image/gerasimov.jpg"
                     alt="Михаил Герасимов"
                     class="w-full h-full object-cover"
                   />
@@ -242,7 +242,7 @@ import footerComponent from '../footer-component.vue';
               <div class="flex justify-center lg:justify-start">
                 <div class="w-64 h-80 bg-gray-100 rounded-xl overflow-hidden">
                   <img
-                    src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\shelekhov.jpg"
+                    src="../../image/shelekhov.jpg"
                     alt="Григорий Шелехов"
                     class="w-full h-full object-cover"
                   />

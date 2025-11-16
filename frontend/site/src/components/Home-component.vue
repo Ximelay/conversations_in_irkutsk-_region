@@ -95,7 +95,7 @@ onUnmounted(() => {
 
     <div class="h-screen snap-start relative" ref="el => sections[1] = el">
       <img
-        src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\Байкал.png"
+        src="../image/BAIKAL.jpg"
         alt="Байкал - Жемчужина Сибири"
         class="w-full h-full object-cover"
       />

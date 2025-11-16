@@ -81,7 +81,7 @@ import footerComponent from '../footer-component.vue';
                 class="w-full h-80 bg-linear-to-br from-red-100 to-orange-100 rounded-2xl overflow-hidden flex items-center justify-center"
               >
                 <div class="text-center p-6">
-                  <div class="text-6xl mb-4"><img src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\g_irkutsk_obl.png" alt=""></div>
+                  <div class="text-6xl mb-4"><img src="../../image/g_irkutsk_obl.png" alt=""></div>
                   <p class="text-gray-600 font-semibold">Герб Иркутской области</p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ import footerComponent from '../footer-component.vue';
                 class="w-full h-80 bg-linear-to-br from-blue-50 to-cyan-50 rounded-2xl overflow-hidden flex items-center justify-center"
               >
                 <div class="text-center p-6 ">
-                  <div class="text-5xl mb-4"><img class="rounded-3xl" src="D:\VUE_PROJECT\conversations_in_irkutsk-_region\frontend\site\src\image\baikal2.jpg" alt=""></div>
+                  <div class="text-5xl mb-4"><img class="rounded-3xl" src="../../image/baikal2.jpg" alt=""></div>
                   <p class="text-gray-600 font-semibold">Озеро Байкал</p>
                 </div>
               </div>
