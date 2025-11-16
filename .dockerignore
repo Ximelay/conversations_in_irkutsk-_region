@@ -21,7 +21,13 @@ yarn-error.log*
 
 # Dependency directories
 backend/vendor/
+frontend/site/node_modules/
+frontend/node_modules/
 node_modules/
+
+# Frontend build artifacts
+frontend/site/dist/
+frontend/site/.vite/
 
 # Environment files
 .env
@@ -37,3 +43,4 @@ coverage/
 Thumbs.db
 *.md
 LICENSE
+IDEF0.zip
